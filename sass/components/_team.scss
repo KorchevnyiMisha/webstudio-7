@@ -1,0 +1,96 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bgColor;
+}
+
+.team__list {
+  display: flex;
+  margin-left: 215px;
+}
+
+.team__item {
+  height: 428px;
+  width: 270px;
+  background: $mainColor2;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__img {
+  width: 270px;
+}
+
+.team__h {
+  margin-top: 30px;
+
+  font-family: $ffMain;
+  font-size: 16px;
+  font-weight: $fwSmaller;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team__text {
+  margin-top: 10px;
+  font-family: $ffMain;
+  font-size: 16px;
+  font-weight: $fwText;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: $textColor;
+}
+
+.icons {
+  display: flex;
+  margin-left: 32px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.icons__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+
+  color: $iconColor;
+
+  transition: color 250ms $timingFunction,
+    background-color 250ms $timingFunction;
+
+  &:hover {
+    background-color: $accentColor;
+    color: $mainColor2;
+    fill: $mainColor2;
+  }
+
+  &:hover .icons__svg {
+    fill: $mainColor2;
+  }
+}
+
+.icons__item--first {
+  margin-left: 32px;
+}
+
+.icons__svg {
+  margin-top: 12px;
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+  fill: $iconColor;
+}

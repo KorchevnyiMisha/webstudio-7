@@ -1,0 +1,38 @@
+.about {
+  margin-bottom: 94px;
+}
+
+.about__list {
+  display: flex;
+}
+
+.about__item {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.about__thumb {
+  position: absolute;
+  left: 0;
+  top: calc(294px - 70px);
+
+  width: 370px;
+  height: 70px;
+  background-color: $aboutBg;
+  display: flex;
+  padding-left: 83px;
+  align-items: center;
+
+  font-family: $ffMain;
+  font-weight: $fwBolder;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $mainColor2;
+}

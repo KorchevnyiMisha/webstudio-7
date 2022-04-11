@@ -1,0 +1,51 @@
+.clients__heading {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  font-family: $ffMain;
+  font-size: 36px;
+  font-weight: $fwBolder;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  margin-bottom: 94px;
+
+  &:first-child {
+    margin-left: 15px;
+  }
+}
+
+.clients__item {
+  margin-left: 30px;
+}
+
+.client__a {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $iconColor;
+  border-radius: 4px;
+  color: $iconColor;
+
+  transition: color 250ms $timingFunction,
+    background-color 250ms $timingFunction;
+
+  &:hover {
+    border: 1px solid $accentColor;
+    color: $accentColor;
+  }
+
+  &:hover .client__svg {
+    fill: currentColor;
+  }
+}
+
+.client__svg {
+  width: 170px;
+  height: 92px;
+  fill: $iconColor;
+  transition: fill 250ms $timingFunction;
+}

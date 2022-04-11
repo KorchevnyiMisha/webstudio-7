@@ -1,0 +1,115 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background: $mainColor2;
+}
+
+.close-modal {
+  position: absolute;
+  left: 490px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+
+  background: $mainColor2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: $mainColor3;
+}
+
+.close-modal-x {
+  width: 18px;
+  height: 18px;
+  fill: $mainColor3;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.modal-h {
+  /* margin-top: ; */
+  margin-bottom: 12px;
+
+  font-family: $ffMain;
+  font-weight: $fwBolder;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $mainColor;
+}
+
+.information-form {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $ffMain;
+  font-weight: $fwSmaller;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: $textColor;
+  margin-bottom: 4px;
+}
+
+.text-input {
+  width: 448px;
+  height: 40px;
+  padding: 12px 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  width: 448px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+
+  font-family: $ffMain;
+  font-weight: $fwText;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+
+.terms {
+  color: $accentColor;
+  text-decoration: underline;
+}
+
+.button--modal {
+  margin-left: 164px;
+}

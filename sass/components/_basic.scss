@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+// ------------------------------------------
+
+
+body {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  line-height: 1.71;
+  font-size: 14px;
+
+  color: $mainColor;
+  background: $mainColor2;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+p {
+  font-family: $ffMain;
+  font-weight: $fwText;
+  letter-spacing: 0.03em;
+
+  color: $textColor;
+}
+
+h3 {
+  text-align: left;
+  font-family: $ffMain;
+  font-weight: $fwBolder;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-family: $ffMain;
+  font-weight: $fwBolder;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+
+  color: $mainColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:visited {
+    text-decoration: none;
+    color: $mainColor;
+  }
+
+  &:hover {
+    color: $accentColor;
+  }
+}
+
+a:visited {
+  text-decoration: none;
+  color: $mainColor;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  font-family: $ffMain;
+  font-weight: $fwBolder;
+  font-size: 16px;
+
+  background-color: $accentColor;
+  color: $mainColor2;
+}

@@ -1,0 +1,24 @@
+.hero {
+  padding: 200px 452px 0px 452px;
+  height: 600px;
+  margin-bottom: 94px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  background: url(../images/hero-bg.jpg);
+  color: $mainColor2;
+}
+
+.hero__heading {
+  font-family: $ffMain;
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 30px;
+
+  color: $mainColor2;
+}
