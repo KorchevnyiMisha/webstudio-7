@@ -101,6 +101,8 @@
 }
 
 .contact-list__link {
+  display: flex;
+  align-items: center;
   color: inherit;
   transform: 50% -50%;
 }
